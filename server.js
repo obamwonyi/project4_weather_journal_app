@@ -1,4 +1,5 @@
 // require express for our routing , sessions(if needed) http request and error handling 
+let projectData = {};
 const express = require("express"); 
 const path = require("path/posix");
 //storing the express function in an app variable for easy use 
@@ -19,4 +20,18 @@ const cors = require("cors");
 app.listen(port, () => {
     console.log("The server is listening in the port : " + port);
 })
+
+//creating a post route to feed the data in the projectData to 
+app.post("/post", async (req, res) => {
+    const body = await req.body;
+    projectData = body;
+    //console.log(projectData);
+    res.send(projectData);
+});
+
+//creating a get route to feed the data in the projectData to 
+app.get("/getdata", async (req, res) => {
+    //console.log(projectData);
+  res.send(projectData);
+});
 
