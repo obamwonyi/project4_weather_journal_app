@@ -1,28 +1,35 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather journal </title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="input">
-        <form action="">
-            <label for="zip code">Zip code :</label>
-            <input type="number" id="zip_code" placeholder="enter zip code ">
-            <label for="feelings">feelings</label>
-            <textarea name="feelings" id="feeling" cols="30" rows="10"></textarea> 
-            <input type="submit" name="submit" value="generate" id="generate">
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather journal</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+      <header class="header">
+          <h1 class="h1">Weather api</h1>
+      </header>
+    <div class="container">
 
-    </div>
-    <div class="output">
-        <p id="temp"></p>
-        <p id="date"></p>
-        <p id="user_input"></p>
+      <div class="input">
+        <form action="" class="card">
+          <label for="zip code">Zip code :</label>
+          <input class="zip" type="number" id="zip_code" placeholder="enter zip code " />
+          <label for="feelings">Feelings :</label>
+          <textarea class="feelings" name="feelings" id="feeling" cols="30" rows="10" placeholder="enter your feelings"></textarea>
+          <input class="generate" type="submit" name="submit" value="generate" id="generate"/>
+        </form>
+      </div>
+      <div class="output">
+        <p id="temp" class="temp">The temperture is 52f</p>
+        <p id="date" class="date">2013</p>
+        <p id="user_input" class="user_input">feelings is a very long string to enter the dome so I would have to 
+            handle it properly 
+        </p>
+      </div>
     </div>
 
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

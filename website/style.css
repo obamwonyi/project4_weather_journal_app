@@ -1,22 +1,313 @@
-* 
-{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #fffdfa;
+}
 
+.container {
+  width: 90%;
+  margin: auto;
+}
 
-form 
-{
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+
+.zip {
+  width: 50%;
+  height: 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.feelings {
+  border: 2px solid black;
+  height: 90px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.generate {
+  width: 30%;
+  padding: 10;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: #17ED1A;
+}
+
+.output {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.temp {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.date {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.user_input {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.header {
+    background-color: #7CA071;
+    margin-bottom: 20px;
+    height: 100px;
+    padding-top: 20px;
+    color: white;
+}
+.h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+/* ------------------------------tablet ----------------------------*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card {
     display: flex;
     flex-direction: column;
-    width: 50vh;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .card:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    background-color: white;
+  }
+
+  .zip {
+    width: 50%;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  .feelings {
+    border: 2px solid black;
+    height: 90px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .generate {
+    width: 30%;
+    padding: 10;
     margin: auto;
-        margin-top: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: #17ED1A;
+  }
+
+  .output {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+
+  .temp {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .date {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .user_input {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .header {
+    background-color: #7CA071;
+    margin-bottom: 20px;
+    height: 100px;
+    padding-top: 20px;
+    color: white;
+  }
+  .h1 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
-.input 
-{
+/* ------------------------Desktop view ------------------------*/
 
+@media screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .card:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    background-color: white;
+  }
+
+  .zip {
+    width: 50%;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  .feelings {
+    border: 2px solid black;
+    height: 90px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .generate {
+    width: 150px;
+    padding: 10;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: #17ED1A;
+    /*
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+
+  }
+
+  .generate:hover
+  {
+    width: 150px;
+    padding: 10;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: #17ED1A;
+    box-shadow: none;
+
+  }
+
+  .output {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+
+  .temp {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .date {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .user_input {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .header {
+    background-color: #7CA071;
+    height: 100px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+  }
+  .h1 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
 }
