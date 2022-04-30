@@ -7,6 +7,10 @@ let text = "empty textarea";
 const temp = document.querySelector("#temp");
 const dateOutput = document.querySelector("#date"); 
 const user_input = document.querySelector("#user_input");
+const icon = document.querySelector("#icon");
+const description = document.querySelector("#discription");
+let description_value = undefined;
+let icon_value = undefined;
 
 //fetching the query submit input node from our document 
 const generate = document.querySelector("#generate");
@@ -59,6 +63,9 @@ const fetchData = async (api_url) => {
     {
         const result = await fetch(api_url); 
         const result_in_json = await result.json(); 
+        console.log(result_in_json);
+        icon_value = result_in_json["weather"][0].icon;
+        description_value = result_in_json["weather"][0].description;
         if(result_in_json.cod === 200) 
         {
             return result_in_json;
@@ -174,9 +181,11 @@ const updateDom = async (data) => {
     else
     {
         //update our dom with the value passed to them if the actual api result was fetched
-        temp.innerHTML = `The current temperature is : ${res.temp} `;
+        temp.innerHTML = `The current temperature is : ${res.temp}f `;
         dateOutput.innerHTML = `Date : ${presentDate}`;
         user_input.innerHTML = `Your feelings are : ${text}`;
+        icon.src = "https://openweathermap.org/img/wn/" +  icon_value + "@2x.png";
+        description.innerHTML = `${description_value}`;
     }
 
     
