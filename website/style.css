@@ -12,7 +12,6 @@ body {
 .container {
   width: 90%;
   margin: auto;
-
 }
 
 .card {
@@ -95,11 +94,11 @@ body {
 }
 
 .header {
-    border-bottom: 1px solid white;
-    margin-bottom: 20px;
-    height: 100px;
-    padding-top: 20px;
-    color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  height: 100px;
+  padding-top: 20px;
+  color: white;
 }
 .h1 {
   width: 50%;
@@ -191,7 +190,7 @@ body {
   }
 
   .header {
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
     margin-bottom: 20px;
     height: 100px;
     padding-top: 20px;
@@ -231,14 +230,13 @@ body {
   }
 
   .zip {
-
     color: white;
     width: 200px;
     height: 25px;
     border: 1px solid white;
     border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
   }
 
@@ -248,7 +246,7 @@ body {
     height: 90px;
     padding: 10px;
     border-radius: 5px;
-  
+    margin-top: 10px;
   }
 
   .generate {
@@ -267,12 +265,10 @@ body {
       0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
       0 100px 80px rgba(0, 0, 0, 0.12);
     */
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
-
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
 
-  .generate:hover
-  {
+  .generate:hover {
     width: 150px;
     padding: 10;
     margin: auto;
@@ -283,7 +279,6 @@ body {
     color: white;
     background-color: black;
     box-shadow: none;
-
   }
 
   .output {
@@ -293,7 +288,7 @@ body {
       0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
       0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
       0 100px 80px rgba(0, 0, 0, 0.12);
-    background-color:rgba(0, 0, 0, 0.9) ;
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 10px;
     margin-top: 20px;
 
@@ -314,6 +309,7 @@ body {
   .user_input {
     padding-bottom: 10px;
     padding-top: 5px;
+    margin-top: 10px;
   }
 
   .header {
@@ -329,9 +325,7 @@ body {
     text-align: center;
   }
 
-  .icon_des 
-  {
+  .icon_des {
     display: flex;
-
   }
 }
